@@ -12,7 +12,7 @@ export default class Layout extends Component {
         <Navbar/>
         <Switch>
             <Route path='/' exact component={Signin}/>
-          </Switch>
+        </Switch>
       </div>
     );
   }

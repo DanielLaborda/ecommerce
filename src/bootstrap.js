@@ -10,7 +10,6 @@ const createStoreWithMiddleware = applyMiddleware()(createStore);
 import "./style/main.scss";
 import history from "./history";
 import Layout from "./components/layout";
-import Signin from "./components/auth/signin";
 
 
 function main() {
