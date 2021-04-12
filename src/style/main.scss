@@ -14,9 +14,15 @@ font-family: 'Open Sans Condensed', sans-serif;
 font-family: 'Titillium Web', sans-serif;
 */
 
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #808080;
+}
+
 
 @import 'layout';
 @import 'headernavbar';
 @import 'auth/signin';
 @import 'auth/signup';
 @import 'page-title';
+@import 'form-fields';
