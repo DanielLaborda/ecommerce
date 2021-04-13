@@ -18,4 +18,11 @@
             text-decoration-line: underline;
         }
     }
+
+    &__items {
+
+        & > * {
+            text-decoration-line: none;
+        }
+    }
 }
