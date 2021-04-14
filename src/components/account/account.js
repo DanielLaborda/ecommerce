@@ -27,13 +27,15 @@ class Account extends Component {
         this.props.setNavbarLinks(navbarLinks);
     }
     renderContent() {
+        let jsx;
         if(this.props.navbarLinks) {
             this.props.navbarLinks.map(link => {
                 if(link.active) {
-                    return link.component
+                    jsx = link.component
                 }
             })
         }
+        return jsx;
     }
     render() {
         return (
