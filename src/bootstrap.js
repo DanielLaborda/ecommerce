@@ -14,6 +14,7 @@ const createStoreWithMiddleware = applyMiddleware()(compose((window.devToolsExte
 import "./style/main.scss";
 import history from "./history";
 import Layout from "./components/layout";
+import Account from "./components/account/account";
 
 
 function main() {
@@ -25,6 +26,8 @@ function main() {
             <Route path='/' exact component={SignIn}/>
             <Route path='/signin' component={SignIn}/>
             <Route path='/signup' component={SignUp}/>
+            
+            <Route path='/account' component={Account}/>
         </Switch>
         </Layout>
       </Router>
