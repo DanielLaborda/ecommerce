@@ -5,6 +5,7 @@ import {
     CHANGE_NAVBAR_ACTIVE
 } from '../actions/types';
 
+//reducer jobs-> son los filtros por tipo de accion
 const INITIAL_STATE = {
     headerLinks: [],
     navbarLinks: []

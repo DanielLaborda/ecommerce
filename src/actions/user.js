@@ -4,14 +4,17 @@ import {
 } from './types';
 
 export function setPurchaseDetail(_id) {
+    console.log(_id);
     return({
         type: SET_PURCHASE_DETAIL,
         payload: _id
     })
 }
 
+//Como funcionan los creadores de acciones-> son la funcion donde se crea la accion
 export function fetchUserPurchases() {
     return ({
+        //accion redux -> las que tiene la info
         type: SET_USER_PURCHASES,
         payload: [
             {
