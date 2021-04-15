@@ -17,7 +17,7 @@ class PurchaseDetail extends Component {
         const { name, shippingAddress } = user;
 
         return (
-            <div className={`${className} purchase-details`}>
+            <div className={`${className} purchase-detail`}>
                 <PurchaseDetailLabel 
                  className='purchase-detail__order-number'
                  title='Order Number'
@@ -29,7 +29,7 @@ class PurchaseDetail extends Component {
                  value={orderDate}/>
                 
                 <PurchaseDetailLabel 
-                 className='purchase-detail__shipping'
+                 className='purchase-detail__shipping-address'
                  title='Shipping'
                  value={`${name} \n ${shippingAddress}`}/>
 
@@ -42,6 +42,8 @@ class PurchaseDetail extends Component {
                  className='purchase-detail__credit-card'
                  title='Credit Card'
                  value={`${creditCard}`}/>
+                <a className='purchase-detail__track-shipment'>Track Shipment</a>
+                <a className='purchase-detail__print-receipt'>Print Receipt</a>
             </div>
         )
     }
