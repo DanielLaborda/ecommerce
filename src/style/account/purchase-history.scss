@@ -1,20 +1,21 @@
 .purchase-history {
-    grid-row: content-s/content-e;
-    grid-column: s/e;
-
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     &__page-title {
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid #CCC;
     }
     &__border-bottom {
         border-bottom: 1px solid #F2F2F2;
     }
-
 }
 
 .purchases {
-
+    margin: 37px 0;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, 80px);
+    width: 360px;
 }
-
-.purchase-detail {
-
-}
+.purchase-detail {}
