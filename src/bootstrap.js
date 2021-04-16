@@ -15,6 +15,7 @@ import "./style/main.scss";
 import history from "./history";
 import Layout from "./components/layout";
 import Account from "./components/account/account";
+import Shop from "./components/shop/shop";
 
 
 function main() {
@@ -28,6 +29,7 @@ function main() {
             <Route path='/signup' component={SignUp}/>
             
             <Route path='/account' component={Account}/>
+            <Route path='/shop' component={Shop}/>
         </Switch>
         </Layout>
       </Router>

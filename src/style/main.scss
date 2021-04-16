@@ -27,6 +27,11 @@ body {
 @import 'page-title';
 @import 'form-fields';
 @import 'details';
+
+/* ACOUNT */
 @import 'account/account';
 @import 'account/account-information';
 @import 'account/purchase-history';
+
+/* SHOP */
+@import 'shop';
