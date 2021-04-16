@@ -1,6 +1,7 @@
 import {
     // SET_SHOP_CATEGORIES
-    SET_NAVBAR_LINKS
+    SET_NAVBAR_LINKS,
+    SET_SHOP_PRODUCTS
 } from './types';
 
 export function fetchShopCategories() {
@@ -24,18 +25,80 @@ export function fetchShopCategories() {
             },
             {
                 _id:3,
-                title: 'Python',
+                title: 'Linux',
                 active: false
             },
             {
                 _id:4,
-                title: 'UML',
+                title: 'Python',
                 active: false
             },
             {
                 _id:5,
+                title: 'UML',
+                active: false
+            },
+            {
+                _id:6,
                 title: 'Ruby',
                 active: false
+            }
+        ]
+    })
+}
+
+export function fetchShopProducts() {
+    return({
+        type: SET_SHOP_PRODUCTS,
+        payload: [
+            {
+                _id:0,
+                title: 'JavaScript in ther Browser',
+                description: 'The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. ... The running speed starts slowly, but gets faster each minute after you hear this signal.',
+                price: 1.99,
+                belongTso: [0, 1]
+            },
+            {
+                _id:1,
+                title: 'Graph Database',
+                description: 'The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. ... The running speed starts slowly, but gets faster each minute after you hear this signal.',
+                price: 1.99,
+                belongTso: [0, 6]                
+            },
+            {
+                _id:2,
+                title: 'Full Stack Development',
+                description: 'The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. ... The running speed starts slowly, but gets faster each minute after you hear this signal.',
+                price: 1.99,
+                belongTso: [0, 1, 4]
+            },
+            {
+                _id:3,
+                title: 'User Interface Design',
+                description: 'The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. ... The running speed starts slowly, but gets faster each minute after you hear this signal.',
+                price: 1.99,
+                belongTso: [0, 2]
+            },
+            {
+                _id:4,
+                title: 'JavaScript Development',
+                description: 'The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. ... The running speed starts slowly, but gets faster each minute after you hear this signal.',
+                price: 1.99,
+                belongTso: [0, 1]
+            },
+            {
+                _id:5,
+                title: 'User Experience Design',
+                description: 'The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. ... The running speed starts slowly, but gets faster each minute after you hear this signal.',
+                price: 1.99,
+                belongTso: [0, 2]
+            },
+            {
+                _id:6,
+                title: 'Advanced OOP',
+                description: 'The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. ... The running speed starts slowly, but gets faster each minute after you hear this signal.',
+                price: 1.99,
+                belongTso: [0, 6]
             }
         ]
     })
