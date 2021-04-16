@@ -12,12 +12,12 @@ class Shop extends Component {
                 path: '/signup'
             }
         ]
-
-      // set header links
-      // fetch shop products action creator
+        this.props.setHeaderLinks(headerLinks);
+        this.props.fetchShopCategories();
       // fetch navbar links
           // set nav links
           // filter product with links
+      // fetch shop products action creator
   }
   render() {
     return (
