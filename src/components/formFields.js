@@ -17,14 +17,32 @@ export class FormButton extends Component {
         const { className, title, type, onClick, input, short } = this.props;
         return (
             <div className={`${className} form-button`}>
-                <button className={`form-button__button ${short ? 'form-button__gray-button' : ''}`}
-                        type={type}
-                        {...input}
-                        onClick={onClick}
-                >
+              <button className={`form-button__button ${short ? 'form-button__gray-button' : ''}`}
+                type={type}
+                {...input}
+                onClick={onClick}
+              >
                 {title}
-                </button>
+              </button>
             </div>
         )
     }
+}
+
+export class FormGrayButton extends Component {
+  render() {
+      const { className, title, type, onClick, input, labelTitle } = this.props;
+      return (
+          <div className={`${className} form-button-long-gray`}>
+              <label className='form-button-long-gray__label'>{labelTitle}</label>
+              <button className={`form-button-long-gray__button with-gray`}
+                      type={type}
+                      {...input}
+                      onClick={onClick}
+              >
+              {title}
+              </button>
+          </div>
+      )
+  }
 }
