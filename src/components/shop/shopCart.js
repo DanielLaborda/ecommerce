@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CartProducts from './cartProducts';
 
 function CartButton({className, icon}) {
     return (
@@ -10,7 +11,7 @@ function CartButton({className, icon}) {
 
 function CartContent({className, products}) {
     let count = products.length;
-    let productsJSX = products.map(product => <h1 key={products} >{product}</h1>)
+    let productsJSX = products.map(product => <CartProducts key={products} />)
     return(
         <div className={`${className} cart-content`}>
             <div className={`cart-content__title`}>
