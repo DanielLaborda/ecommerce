@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './headernavbar/header';
 import Navbar from './headernavbar/navbar';
+import ShopCart from './../components/shop/shop-cart';
 
 
 export default class Layout extends Component {
@@ -10,6 +11,7 @@ export default class Layout extends Component {
         <Header/>
         <Navbar/>
         {this.props.children}
+        <ShopCart  className='shop__cart-button'/>
       </div>
     );
   }
