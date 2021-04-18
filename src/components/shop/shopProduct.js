@@ -11,7 +11,7 @@ class ShopProducts extends Component {
                 <div className='shop-product__title'>
                     {title}
                 </div>
-                <div className='shop-product__decription'>
+                <div className='shop-product__description'>
                     {description}
                 </div>
                 <GreenPriceTag className='shop-product__price' title={price} />
