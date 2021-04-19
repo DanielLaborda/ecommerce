@@ -11,7 +11,6 @@ export default class Layout extends Component {
         <Header/>
         <Navbar/>
         {this.props.children}
-        <ShopCart  className='shop__cart-button'/>
       </div>
     );
   }
