@@ -4,7 +4,6 @@ import React, { Component } from 'react';
 class Quantity extends Component {
     render() {
         const { className, quantity } = this.props;
-        console.log(quantity);
         return (
             <div className={`${className} quantity`}>
                 <div className='quantity__count'>

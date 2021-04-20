@@ -6,6 +6,8 @@ import ShopCart from './shopCart';
 import ShopProducts from './shopProduct';
 import ShopSearchBar from './shopSearchBar';
 
+import CartButton from './cartButton';
+
 class Shop extends Component {
   constructor() {
     super()
@@ -14,6 +16,14 @@ class Shop extends Component {
       showCart: true
     }
   }
+
+  handleAddToCart = () => {
+    if(document.getElementById('shop-cart').classList.contains('cart-hidden')) {
+      document.getElementById('shop-cart').classList.remove('cart-hidden');
+    } else {
+      document.getElementById('shop-cart').classList.add('cart-hidden');
+    }
+  } 
   
   componentDidMount() {
         const headerLinks = [
@@ -59,7 +69,7 @@ class Shop extends Component {
             {
               this.state.showCart ? <ShopCart  className='shop__cart'/> : ''
             }
-            {/* shop cart button */}
+            <CartButton onClick={this.handleAddToCart} className='shop__cart-button' icon='fas fa-cart-plus'/>
 
         </div>
     );
