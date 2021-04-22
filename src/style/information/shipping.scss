@@ -33,6 +33,9 @@
     }
     &__line {
         grid-row: line-s/line-e;
+        grid-column: 1/-1;        
+        border-top: 1px solid #ccc;
+        margin-bottom: 24px;
     }
     &__back {
         grid-row: buttons-s/buttons-e;
@@ -40,7 +43,12 @@
     }
     &__use-this-address {
         grid-row: buttons-s/buttons-e;
-        grid-column: uste-this-address-s/uste-this-address-e;
+        grid-column: use-this-address-s/use-this-address-e;
+    }
+    &__order-summary {
+        grid-row: name-s;
+        grid-column: use-this-address-e/-1;
+        justify-self: end;
     }
 }
 .shipping {
